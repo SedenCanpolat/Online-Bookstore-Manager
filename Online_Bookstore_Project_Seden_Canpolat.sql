@@ -74,7 +74,6 @@ INSERT INTO Books (Author_ID, Publisher_ID, Title, Genre, Number_of_Pages, Price
   
 select * from Customers;
 select * from Publishers;
-select * from Books;
 select * from Authors;
-select * from Publishers;
+select * from Books;
 select * from Carts;
