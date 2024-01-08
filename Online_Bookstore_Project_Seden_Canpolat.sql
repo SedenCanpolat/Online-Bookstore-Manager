@@ -55,6 +55,8 @@ DROP TABLE Customers, Authors, Publishers, Books, Carts;
 DROP TABLE Carts;
 
 INSERT INTO Customers (First_Name, Last_Name, Email, Address, Telephone_Number) VALUES ("Elsa", "Snow", "elsasnowemail", "Finland", "5364562141");
+INSERT INTO Customers (First_Name, Last_Name, Email, Address, Telephone_Number) VALUES ("Elmas", "Snow", "elmassnowemail", "Finland", "5364564558");
+INSERT INTO Customers (First_Name, Last_Name, Email, Address, Telephone_Number) VALUES ("Adrea", "Sun", "adreasunemail", "Sweden", "5556898437");
 
 INSERT INTO Authors (First_Name, Last_Name, Date_of_Birth) VALUES ("J.K.", "Rowling", "1965");
 INSERT INTO Publishers (Address, Name, Telephone_Number) VALUES ("Izmir", "YKY", "2183648123");
