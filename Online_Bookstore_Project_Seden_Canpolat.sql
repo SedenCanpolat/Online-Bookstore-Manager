@@ -44,13 +44,35 @@ CREATE TABLE Carts (
   Cart_ID int NOT NULL AUTO_INCREMENT,
   Customer_ID int,
   Book_ID int,
+  Price int,
+  Quantity int,
   Shopping_Date varchar(10),
   Shipping_Date varchar(10),
   PRIMARY KEY (Cart_ID)
 );
 
 DROP TABLE Customers, Authors, Publishers, Books, Carts;
+DROP TABLE Carts;
 
-INSERT INTO Authors (First_Name, Last_Name, Date_of_Birth) VALUES ("JK", "Rowling", "12");
-INSERT INTO Publishers (Address, Name, Telephone_Number) VALUES ("Izmir", "Can", "2183648123");
+INSERT INTO Customers (First_Name, Last_Name, Email, Address, Telephone_Number) VALUES ("Elsa", "Snow", "elsasnowemail", "Finland", "5364562141");
+
+INSERT INTO Authors (First_Name, Last_Name, Date_of_Birth) VALUES ("J.K.", "Rowling", "1965");
+INSERT INTO Publishers (Address, Name, Telephone_Number) VALUES ("Izmir", "YKY", "2183648123");
 INSERT INTO Books (Author_ID, Publisher_ID, Title, Genre, Number_of_Pages, Price) VALUES ("1", "1", "Harry Potter", "Fantasy", "300", "50");
+
+INSERT INTO Authors (First_Name, Last_Name, Date_of_Birth) VALUES ("William", "Shakespeare", "1564");
+INSERT INTO Publishers (Address, Name, Telephone_Number) VALUES ("Istanbul", "Turkiye Is Bankasi", "2362542112");
+INSERT INTO Books (Author_ID, Publisher_ID, Title, Genre, Number_of_Pages, Price) VALUES ("2", "2", "Romeo ve Juliet", "Drama", "150", "30");
+
+INSERT INTO Authors (First_Name, Last_Name, Date_of_Birth) VALUES ("George", "Orwell", "1903");
+INSERT INTO Publishers (Address, Name, Telephone_Number) VALUES ("Izmir", "Can", "2562451221");
+INSERT INTO Books (Author_ID, Publisher_ID, Title, Genre, Number_of_Pages, Price) VALUES ("3", "3", "1984", "Science Fiction", "350", "40");
+
+INSERT INTO Books (Author_ID, Publisher_ID, Title, Genre, Number_of_Pages, Price) VALUES ("3", "3", "Hayvan Ciftligi", "Fable", "150", "20");
+  
+select * from Customers;
+select * from Publishers;
+select * from Books;
+select * from Authors;
+select * from Publishers;
+select * from Carts;
